@@ -1,0 +1,16 @@
+.clearfix:before,
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+    font: 12px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    min-width: 1200px;
+    background-color: #313042;
+}
+
+.middle{
+    margin: 0 auto;
+}

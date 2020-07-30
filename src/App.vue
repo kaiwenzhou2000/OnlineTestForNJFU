@@ -1,32 +1,46 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <Header>
+      <router-link to="/SingleSelectForMY" class="header_slot">马原</router-link>
+      <router-link to="/SingleSelectForMG" class="header_slot">毛概</router-link>
+      <router-link to="/SingleSelectForSX" class="header_slot">思修</router-link>
+      <router-link to="/SingleSelectForJDS" class="header_slot">近代史</router-link>
+      <router-link to="/SingleSelectForCpp" class="header_slot">C++</router-link>
+    </Header>
+
+    <div id="main">
+      <SideBar></SideBar>
+      <router-view></router-view>
     </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+  import Header from "./components/Header"
+  import SideBar from "./components/SideBar"
+  export default {
+    name: "App",
+    components: {
+      Header,
+      SideBar,
     }
   }
-}
+</script>
+
+<style lang="less">
+@import "css/reset.css";
+@import "css/base.css";
+  a{
+    text-decoration-line: none;
+    color: #FFF;
+  }
+  .router-link-active{
+    color: #FF7E00;
+  }
+  .header_slot{
+    margin-right: 80px;
+  }
+  #main{
+    display: flex;
+  }
 </style>
