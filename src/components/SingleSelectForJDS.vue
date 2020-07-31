@@ -134,7 +134,7 @@
         font-color: #FF891A;
         #container{
             margin-top: 20px;
-            width: 80%;
+            width: 800px;
             height: 100%;
             #text{
                 height: 300px;

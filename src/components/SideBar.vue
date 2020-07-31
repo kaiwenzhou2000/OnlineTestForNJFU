@@ -26,6 +26,7 @@
         height: 566px;
         background-color: #252431;
         #container{
+            width: 300px;
             color: #FF7E00;
             font-size: 20px;
             p{

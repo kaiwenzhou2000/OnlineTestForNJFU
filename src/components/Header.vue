@@ -25,7 +25,7 @@
             color: #FF7E00;
             line-height: 80px;
             div:nth-child(1){
-                margin-right: 160px;
+                margin-right: 10px;
             }
         }
     }
